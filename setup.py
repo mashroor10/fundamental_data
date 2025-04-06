@@ -15,6 +15,7 @@ setup(
         "requests>=2.32.3",
         "seaborn>=0.13.2",
         "yfinance>=0.2.55",
+        "twine>=6.1.0"
     ],
     long_description=description,
     long_description_content_type="text/markdown",
