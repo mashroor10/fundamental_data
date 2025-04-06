@@ -1,5 +1,8 @@
 from setuptools import setup, find_packages
 
+with open("README.md", "r") as f:
+    description = f.read()
+
 setup(
     name='fundamental_data',
     version='0.1.0',
@@ -13,4 +16,7 @@ setup(
         "seaborn>=0.13.2",
         "yfinance>=0.2.55",
     ],
+    long_description=description,
+    long_description_content_type="text/markdown",
+    author="Mashroor Rahman",
 )

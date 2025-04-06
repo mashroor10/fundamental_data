@@ -43,7 +43,7 @@ class FundamentalData:
         if response.status_code != 200:
             print(f"Failed to fetch data for {ticker} (CIK: {cik})")
             return None
-            
+        time.sleep(0.2)    
         return StockFundamentals(response.json(), ticker)
 
     def get_bulk_fundamentals(self, tickers):
