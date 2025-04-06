@@ -46,11 +46,11 @@ class FundamentalData:
             
         return StockFundamentals(response.json(), ticker)
 
-    def get_bulk_fundamentals(self, tickers, delay=0.2):
+    def get_bulk_fundamentals(self, tickers):
         """Get fundamental data for multiple tickers with rate limiting"""
         results = {}
         for ticker in tickers:
             if fundamentals := self.get_fundamentals(ticker):
                 results[ticker] = fundamentals
-            time.sleep(delay)
+            time.sleep(0.2)
         return results
