@@ -5,7 +5,7 @@ with open("README.md", "r") as f:
 
 setup(
     name='fundamental_data',
-    version='0.1.0',
+    version='0.1.1',
     packages=find_packages(),
     install_requires=[
         "ipykernel>=6.29.5",
@@ -17,6 +17,9 @@ setup(
         "yfinance>=0.2.55",
         "twine>=6.1.0"
     ],
+    url='https://github.com/mashroor10/fundamental_data/tree/main',
+    license='MIT',
+    description='A Python package for retrieving SEC fundamental data',
     long_description=description,
     long_description_content_type="text/markdown",
     author="Mashroor Rahman",
