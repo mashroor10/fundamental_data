@@ -44,3 +44,10 @@ fd = FundamentalData('myemail@email.com')
 dataDict = fd.get_bulk_fundamentals([AAPL,TSLA])
 dataDict['AAPL'].QuarterlyTable
 ```
+
+### Visualizations
+
+```
+apple.visualize_data_availability()
+apple.saveVisualizationTable('AAPL_vizz.xlsx')
+```

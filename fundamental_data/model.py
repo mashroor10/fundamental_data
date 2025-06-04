@@ -1,3 +1,7 @@
+import pandas as pd
+import numpy as np
+import yfinance as yf
+from collections import defaultdict
 class StockFundamentals:
     def __init__(self, data, ticker):
         self.data = data
